@@ -1,17 +1,16 @@
-import { useState } from 'react'
-import './App.css'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import Hero from './components/Hero'
 import MyButton from './components/MyButton'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <h1>Hello React</h1>
-      <div className="card">
-        <MyButton setCount={setCount} count={count}/>
-      </div>
-    </>
+    <div>
+      <Header/>
+      <Hero/>
+      <MyButton/>
+      <Footer/>
+    </div>
   )
 }
 
